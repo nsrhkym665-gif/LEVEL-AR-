@@ -1,0 +1,12 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>اختبر جهازك — LEVEL AR</title><link rel="stylesheet" href="style.css"></head><body><header class="top"><a class="logo" href="index.html">LEVEL <b>AR</b></a><nav class="nav"><a href="index.html">الرئيسية</a><a href="games.html">الألعاب</a><a href="news.html">الأخبار</a><a href="videos.html">الفيديوهات</a><a href="companies.html">الشركات</a><a href="tools.html">اختبر جهازك</a><a href="challenges.html">تحدي الألعاب</a></nav></header><main class="wrap page"><span class="eyebrow">⚡ Benchmark</span><h1>اختبر جهازك.</h1><p class="muted">اختبار محلي داخل المتصفح. لا يرسل بيانات جهازك لأي خادم.</p><button id="run" class="btn">ابدأ الاختبار</button><p id="status" class="muted">جاهز.</p><section class="section"><div class="bench"><div class="stat"><span class="tag">الأداء</span><div id="cpu" class="big">—</div></div><div class="stat"><span class="tag">زمن الاختبار</span><div id="time" class="big">—</div></div><div class="stat"><span class="tag">المعالج</span><div id="cores" class="big">—</div></div><div class="stat"><span class="tag">الذاكرة</span><div id="ram" class="big">—</div></div><div class="stat"><span class="tag">WebGL</span><div id="gpu" class="big">—</div></div><div class="stat"><span class="tag">المتصفح</span><div id="browser" class="big">—</div></div></div></section></main><footer>LEVEL AR © 2026 — موقع ألعاب عربي مستقل</footer><script>const $=s=>document.querySelector(s);function set(id,v){$(id).textContent=v}
+async function runBench(){
+ set("#status","جاري الاختبار…"); let t=performance.now(),x=0;
+ for(let r=0;r<8;r++){for(let i=0;i<1500000;i++)x=Math.sin(i)*Math.cos(i)+x*.000001}
+ let ms=Math.round(performance.now()-t), score=Math.max(1,Math.min(100,Math.round(100000/ms)));
+ set("#cpu",score+"/100"); set("#time",ms+" ms");
+ set("#cores",navigator.hardwareConcurrency?navigator.hardwareConcurrency+" أنوية":"غير متاح");
+ set("#ram",navigator.deviceMemory?navigator.deviceMemory+" GB تقريبًا":"غير متاح");
+ let gl=document.createElement("canvas").getContext("webgl"); set("#gpu",gl?"مدعوم":"غير مدعوم");
+ set("#browser",navigator.userAgent.includes("Chrome")?"Chrome":navigator.userAgent.includes("Firefox")?"Firefox":"متصفح");
+ set("#status","انتهى الاختبار ✓");}
+document.addEventListener("DOMContentLoaded",()=>$("#run")?.addEventListener("click",runBench));</script></body></html>
