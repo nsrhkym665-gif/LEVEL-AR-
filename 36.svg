@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(252,55%,24%)"/><stop offset="1" stop-color="hsl(307,35%,8%)"/></linearGradient></defs>
-<rect width="900" height="520" fill="url(#g)"/><circle cx="760" cy="100" r="170" fill="rgba(255,255,255,.07)"/>
-<text x="55" y="80" fill="#fff" font-family="Arial" font-size="28" font-weight="700">LEVEL AR</text>
-<text x="55" y="335" fill="#fff" font-family="Arial" font-size="42" font-weight="900">Metal Gear Solid Delta</text>
-<text x="55" y="385" fill="rgba(255,255,255,.65)" font-family="Arial" font-size="20">GAME • 036</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="260"><rect width="500" height="260" rx="28" fill="#151515"/><text x="250" y="120" text-anchor="middle" fill="#fff" font-family="Arial" font-size="52" font-weight="900">Gearbox So</text><text x="250" y="175" text-anchor="middle" fill="#888" font-family="Arial" font-size="18">LEVEL AR</text></svg>
