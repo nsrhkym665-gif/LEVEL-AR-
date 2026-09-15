@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="hsl(144,55%,24%)"/><stop offset="1" stop-color="hsl(199,35%,8%)"/></linearGradient></defs>
+<rect width="900" height="520" fill="url(#g)"/><circle cx="760" cy="100" r="170" fill="rgba(255,255,255,.07)"/>
+<text x="55" y="80" fill="#fff" font-family="Arial" font-size="28" font-weight="700">LEVEL AR</text>
+<text x="55" y="335" fill="#fff" font-family="Arial" font-size="42" font-weight="900">LEGO Star Wars: The Skywalker Sa</text>
+<text x="55" y="385" fill="rgba(255,255,255,.65)" font-family="Arial" font-size="20">GAME • 072</text>
+</svg>
